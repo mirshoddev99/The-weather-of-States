@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Final Project</title>
+  <link rel="stylesheet" href="final.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="#" class="logo">Weather of States</a>
+    <ul>
+      <li><a href="#container-result-state">State</a></li>
+      <li><a href="#container-result-weather">Weather</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
+  </header>
+
+
+  <!-- About -->
+  <div class="about">
+    <a name="about"></a>
+    <h3>About</h3>
+    <p> Hello and welcome to my site that provides information about countries and particularly dedicated to their
+      weather, location and extra. The most useful and suitable side of this site it is alphabetical also I compiled
+      information about any destination which you can get available data by searching the name of the countries.
+      Besides, You can see other further facts about the states at the bottom of the site.
+    </p>
+  </div>
+
+
+  <section class="banner"></section>
+
+
+  <!-- Container -->
+  <div class="container">
+    <form name="searchInput" onsubmit="event.preventDefault(); searchState()">
+      <div class="search-wrapper">
+        <input type="text" id="country-input" name="search" placeholder="Enter a country name here..." />
+        <input onsubmit="searchState()" type="submit" name="submitBtn" id="submitBtn" value="Search" />
+        <p id="faile"></p>
+
+      </div>
+    </form>
+  </div>
+
+
+
+  <!-- Table -->
+  <div class="table-container">
+    <h2>More informations</h2>
+    <div class="stateInfo">
+      <table>
+        <tr id="header">
+          <th>Country</th>
+          <th>Capital</th>
+          <th>Population</th>
+          <th>Currency</th>
+          <th>Continent</th>
+          <th>Languages</th>
+          <th>Timezones</th>
+        </tr>
+        <tr>
+          <td id="t_country"></td>
+          <td id="t_capital"></td>
+          <td id="t_population"></td>
+          <td id="t_currency"></td>
+          <td id="t_continent"></td>
+          <td id="t_languages"></td>
+          <td id="t_timezone"></td>
+
+        </tr><br>
+
+        <tr id="header">
+          <th>Official</th>
+          <th>Subregion</th>
+          <th>Translations</th>
+          <th>Latlng</th>
+          <th>Area</th>
+          <th>Car</th>
+          <th>StartOfWeek</th>
+        </tr>
+
+        <tr>
+          <td id="official"></td>
+          <td id="subregion"></td>
+          <td id="translations"></td>
+          <td id="latlng"></td>
+          <td id="area"></td>
+          <td id="car"></td>
+          <td id="startOfWeek"></td>
+
+        </tr><br>
+
+        <tr id="header">
+          <th>Independent</th>
+          <th>Symbol</th>
+          <th>Demonyms</th>
+          <th>Landlock</th>
+          <th>Idd</th>
+          <th>Status</th>
+          <th>Tld</th>
+        </tr>
+
+        <tr>
+          <td id="independent"></td>
+          <td id="symbol"></td>
+          <td id="demonyms"></td>
+          <td id="landlock"></td>
+          <td id="idd"></td>
+          <td id="status"></td>
+          <td id="tld"></td>
+
+        </tr><br>
+
+
+
+
+      </table>
+    </div>
+
+  </div>
+
+
+
+  <!-- Main Container -->
+  <div class="main_container">
+    <div class="container-result-state">
+      <a name="container-result-state"></a>
+      <div id="result"></div>
+    </div>
+    <div class="container-result-weather">
+      <a name="container-result-weather"></a>
+      <div id="resultOfWeather"></div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <div class="footer">
+    <footer class="fd">
+      <h3>
+        Mirshod <span id="yearOfCopyright"></span> year Pusan National
+        University. All rights reserved.
+      </h3>
+    </footer>
+  </div>
+
+
+  <script src="final.js"></script>
+</body>
+
+</html>
